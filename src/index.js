@@ -6,7 +6,6 @@ import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import reportWebVitals from './helpers/reportWebVitals';
 import {store, persistedStore} from './redux/store';
-import './styles/index.css';
 
 
 ReactDOM.render(
