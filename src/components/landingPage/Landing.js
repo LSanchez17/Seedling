@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Landing = () => {
 
     return(
@@ -10,8 +12,8 @@ const Landing = () => {
             </div>
 
             <div className='bg-green-500 bg-opacity-75 rounded-sm p-6 m-6 grid grid-flow-col'>
-                <button className='rounded-sm bg-gray-200 pr-6 pl-5 m-6 hover:bg-blue-400'>Register</button>                
-                <button className='rounded-sm bg-gray-200 pr-6 pl-5 m-6 hover:bg-blue-400'>Login</button>
+                <button className='rounded-sm bg-gray-200 pr-6 pl-5 m-6 hover:bg-blue-400'><Link to='/register'>Register</Link></button>                
+                <button className='rounded-sm bg-gray-200 pr-6 pl-5 m-6 hover:bg-blue-400'><Link to='/login'>Login</Link></button>
             </div>
         </div>
 
