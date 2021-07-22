@@ -6,21 +6,24 @@ const Dashboard = () => {
     return(
         <div>
             <VisibleNavBar />
-
             <div>
                 <div>
+                    {/* Shows stats and profile pic */}
                     <ProfilePicture />
                     <ProfileStats />
                 </div>
 
                 <div>
                     <div>
+                        {/* Plant alerts go here */}
                         <PlantAlerts />
                     </div>
                     <div>
+                        {/* Mini Weather  */}
                         <WeatherMini />
                     </div>
                     <div>
+                        {/* Form for adding new plants */}
                         <PlantForm />
                     </div>
                 </div>
