@@ -9,7 +9,7 @@ const ProfilePicture = () => {
         const getPicture = async () => {
             //ping server
 
-            setPicture(SERVERRESULT)
+            setPicture()
         }
 
         await getPicture();

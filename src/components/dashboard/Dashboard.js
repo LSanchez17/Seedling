@@ -1,4 +1,7 @@
 import VisibleNavBar from "../navbar/VisibleNavBar"
+import ProfilePicture from "../Profile/ProfilePicture"
+import ProfileStats from "../Profile/ProfileStats"
+
 
 const Dashboard = () => {
     //pings the server upon loading, getting user information
@@ -9,8 +12,12 @@ const Dashboard = () => {
             <div>
                 <div>
                     {/* Shows stats and profile pic */}
-                    <ProfilePicture />
-                    <ProfileStats />
+                    <div>
+                        <ProfilePicture />
+                    </div>
+                    <div>
+                        <ProfileStats />
+                    </div>
                 </div>
 
                 <div>
