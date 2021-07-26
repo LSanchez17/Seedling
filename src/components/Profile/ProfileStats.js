@@ -10,6 +10,8 @@ const ProfileStats = () => {
 
             setStats();
         }
+
+        getStats();
     }, []);
 
     return(

@@ -12,7 +12,7 @@ const ProfilePicture = () => {
             setPicture()
         }
 
-        await getPicture();
+        getPicture();
     })
     return(
         <div>
