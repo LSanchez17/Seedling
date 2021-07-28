@@ -25,6 +25,9 @@ const ProfileStats = () => {
                         <h3>Plant Friends: </h3>
                     </div>
                     <div>
+                        <h3>Friend Requests: </h3>
+                    </div>
+                    <div>
                         <h3>Friends online: </h3>
                     </div>
                 </section>
