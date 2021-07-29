@@ -14,5 +14,7 @@ const RecentPlants = ({plants}) => {
         <div>
             {displayPlants ? displayPlants : <Loading />}
         </div>
-    )
-}
+    );
+};
+
+export default RecentPlants;

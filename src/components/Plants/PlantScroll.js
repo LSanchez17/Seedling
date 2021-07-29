@@ -3,6 +3,7 @@
 //loads as you scroll down
 
 import { useEffect, useState } from "react";
+import PlantLoader from "./PlantLoader";
 
 const PlantScroll = () => {
     const [userPlants, setUserPlants] = useState();

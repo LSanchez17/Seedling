@@ -1,7 +1,9 @@
-import VisibleNavBar from "../navbar/VisibleNavBar"
-import ProfilePicture from "../Profile/ProfilePicture"
-import ProfileStats from "../Profile/ProfileStats"
-
+import VisibleNavBar from "../navbar/VisibleNavBar";
+import ProfilePicture from "../Profile/ProfilePicture";
+import ProfileStats from "../Profile/ProfileStats";
+import PlantAlerts from "../Plants/PlantAlerts";
+import WeatherMini from "../Weather/WeatherMini";
+import PlantForm from "../Plants/PlantForm";
 
 const Dashboard = () => {
     //pings the server upon loading, getting user information

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import Loading from "../utility/Loading";
 
 const WeatherMini = () => {
     //only get two-day forecast
-    const [weather, setWeather] = useState();
+    const [weather, setWeather] = useState([]);
 
     useEffect(() => {
         const fetchWeather = async () => {
@@ -29,7 +30,7 @@ const WeatherMini = () => {
 
     return(
         <div>
-            {forecast ? forecast : <div><h3>Loading...</h3></div>}
+            {forecast ? forecast : <Loading />}
         </div>
     );
 };

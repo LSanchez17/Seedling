@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react"
+import Alert from './Alert';
+import { useEffect, useState } from "react";
+import Loading from '../utility/Loading';
 
 const PlantAlerts = () => {
     //gets alerts that the user has, and displays them
     //add pagination?*************************************
-    const [alerts, setAlerts] = useState();
+    const [alerts, setAlerts] = useState([]);
 
     useEffect(() => {
         const retrieveUserAlerts = async () => {
@@ -18,14 +20,14 @@ const PlantAlerts = () => {
     let fancyfiedAlerts = alerts.map(item => {
         return(
             <div>
-                <Alert plantName={item.plantName} needs={item.plantNeeds} />
+                <Alert needs={item} />
             </div>
         )
     })
 
     return (
         <div>
-            {fancyfiedAlerts ? fancyfiedAlerts : <div><h2>Loading...</h2></div>}
+            {fancyfiedAlerts ? fancyfiedAlerts : <Loading />}
         </div>
     );
 };

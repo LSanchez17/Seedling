@@ -1,11 +1,22 @@
+import Loading from "../utility/Loading"
 
-const Alert = ({plantName, plantNeeds}) => {
-    //gets parameters, 
+const Alert = ({needs}) => {
+    //create set of plantNames
+    //if set has PlantName, show needs
+    //O(n)
+
+    let displayAlerts = needs.map(plant => {
+        return(
+            <div>
+                <h3>{plant.plantName}</h3>
+            </div>
+        )
+    })
     return(
         <div>
-            <h2>Plant Name: </h2>
-            <h3>Plant Needs:</h3>
-            <button>Clear Alert</button>
+            {displayAlerts ? displayAlerts : <Loading />}
         </div>
-    )
-}
+    );
+};
+
+export default Alert;

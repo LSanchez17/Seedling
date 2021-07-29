@@ -1,4 +1,5 @@
 import Loading from "../utility/Loading";
+import RecentPlants from './RecentPlants';
 import { useEffect, useState } from "react";
 
 const PlantFriend = () => {

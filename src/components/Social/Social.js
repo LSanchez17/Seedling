@@ -1,4 +1,5 @@
 import ProfileStats from "../Profile/ProfileStats"
+import PlantFriend from "./PlantFriend";
 
 const Social = () => {
     return (

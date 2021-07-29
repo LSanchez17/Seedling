@@ -16,7 +16,7 @@ const ProfilePicture = () => {
     })
     return(
         <div>
-            <img src={}></img>
+            <img src={picture}></img>
         </div>
     );
 };
