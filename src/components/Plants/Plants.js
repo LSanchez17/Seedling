@@ -1,10 +1,11 @@
-import PlantForm from "./PlantForm";
+import { useEffect, useState } from "react";
+import PlantScroll from "./PlantScroll";
 
 const Plants = () => {
     return (
         <div>
             <div>
-                <PlantForm />
+                <PlantScroll />
             </div>
         </div>
     );

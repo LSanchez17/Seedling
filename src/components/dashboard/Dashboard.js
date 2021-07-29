@@ -16,7 +16,7 @@ const Dashboard = () => {
                         <ProfilePicture />
                     </div>
                     <div>
-                        <ProfileStats />
+                        <ProfileStats extraInfo={true}/>
                     </div>
                 </div>
 

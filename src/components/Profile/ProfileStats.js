@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const ProfileStats = () => {
+const ProfileStats = ({extraInfo}) => {
     //returns stats for this profile
     const [stats, setStats] = useState();
 
@@ -24,12 +24,19 @@ const ProfileStats = () => {
                     <div>
                         <h3>Plant Friends: </h3>
                     </div>
+                    {extraInfo 
+                    ? 
                     <div>
-                        <h3>Friend Requests: </h3>
+                        <div>
+                            <h3>Friend Requests: </h3>
+                        </div>
+                        <div>
+                            <h3>Friends online: </h3>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Friends online: </h3>
-                    </div>
+                    :
+                    <div></div>
+                    }
                 </section>
                 :
                 <div>
