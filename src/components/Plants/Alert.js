@@ -1,17 +1,30 @@
+import { useEffect } from "react";
 import Loading from "../utility/Loading"
 
 const Alert = ({needs}) => {
-    //create set of plantNames
-    //if set has PlantName, show needs
-    //O(n)
+    // create set of plantNames
+    // if set has PlantName, show needs
+    // O(n)
 
-    let displayAlerts = needs.map(plant => {
+    let plantsWithNeeds = new Map();
+
+    useEffect(() => {
+        for(let plant in needs){
+            if(!plantsWithNeeds.has(plant)){
+                plantsWithNeeds.set(plant, needs[plant]);
+            }
+        }
+    });
+
+    let displayAlerts = plantsWithNeeds.forEach(plant => {
         return(
             <div>
-                <h3>{plant.plantName}</h3>
+                <h2>Needs:</h2>
+                <p>{plant}</p>
             </div>
-        )
-    })
+        );
+    });
+
     return(
         <div>
             {displayAlerts ? displayAlerts : <Loading />}
