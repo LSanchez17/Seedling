@@ -1,7 +1,7 @@
 import Alert from './Alert';
 import { useEffect, useState } from "react";
 import Loading from '../utility/Loading';
-import DUMMYALERTS from '../../__tests__/DummyJSON';
+import {DUMMYALERTS} from '../../__tests__/DummyJSON';
 
 const PlantAlerts = () => {
     //gets alerts that the user has, and displays them
